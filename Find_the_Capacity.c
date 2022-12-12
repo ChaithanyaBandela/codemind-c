@@ -1,9 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int s,t,b,bytes,tc;
-    scanf("%d%d%d",&s,&t,&b);
-    bytes=2*s*t*b*512;
-    tc=bytes/1024;
-    printf("%dKB",tc);
+    int c=1,i,a[3];
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<3;i++)
+    {
+        c=c*a[i];
+    }
+    printf("%dKB",c);
 }
