@@ -2,7 +2,7 @@
 int main()
 {
     int n,i;
-    float sum=0,avg=0;
+    float s=0,t=0;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -11,10 +11,8 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        sum=sum+a[i];
+        s=s+a[i];
     }
-    avg=sum/n;
-    {
-    printf("%0.2f",avg);
-    }
+    t=s/n;
+    printf("%.2f",t);
 }
