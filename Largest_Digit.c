@@ -9,9 +9,9 @@ int main()
     e=a/1000;
     if(b>c&&b>d&&b>e)
     printf("%d",b);
-    else if(c>b&&c>d&&c>e)
+    else if(c>d&&c>e&&c>b)
     printf("%d",c);
-    else if(d>c&&d>b&&d>e)
+    else if(d>b&&d>c&&d>e)
     printf("%d",d);
     else
     printf("%d",e);
