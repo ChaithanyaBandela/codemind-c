@@ -1,24 +1,37 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,sum=0,d,e,j,f,g=0;
-    scanf("%d",&a);
-    b=a*a;
-    for(i=a;i>0;)
+    int n,r=0,j,m=0;
+    scanf("%d",&n);
+    j=n; 
+    while(n!=0)
     {
-        d=i%10;
-        sum=(sum*10)+d;
-        i=i/10;
+        m=n%10;
+        r=r*10+m;
+        n/=10;
     }
-    e=sum*sum;
-    for(j=e;j>0;)
+    int y,b=0,c=0;
+    y=r*r;
+    while(y!=0)
     {
-        f=j%10;
-        g=(g*10)+f;
-        j=j/10;
+        b=y%10;
+        c=c*10+b;
+        y/=10;
     }
-    if(g==b)
-    printf("True");
+    int g,i=0,k=0;
+    g=j*j;
+    /*while(j!=0)
+    {
+        i=g%10;
+        k=k*10+i;
+        a/=10;
+    }*/
+    if(c==g)
+    {
+        printf("True");
+    }
     else
-    printf("False");
+    {
+        printf("False");
+    }
 }
