@@ -17,6 +17,5 @@ int main()
     printf("Orange");
     else if(ch=='R')
     printf("Red");
-    else
-    printf("-1");
+    else printf("-1");
 }
