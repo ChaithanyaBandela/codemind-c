@@ -1,18 +1,38 @@
-#include<stdio.h>
+#include <stdio.h>
+
+int Palindrome(int n)
+{
+    int sum = 0,i;
+    i = n;
+
+    while (n > 0)
+    {
+        int remainder = n% 10;
+        sum = sum * 10 + remainder;
+        n=n/10;
+    }
+
+    if (i==sum)
+    {
+        return 1; 
+    }
+    else
+    {
+        return 0; 
+    }
+}
+
 int main()
 {
-    int a,b,i,c=0;
-    scanf("%d",&a);
-    for(i=a;i>0;)
-    {
-        b=i%10;
-        c=(c*10)+b;
-        i=i/10;
-    }
-    if(a==c)
+    int n;
+    scanf("%d", &n);
+
+    if (Palindrome(n))
     {
         printf("True");
     }
     else
-    printf("False");
+    {
+        printf("False");
+    }
 }
